@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function jsonurl2(json){
+      var arr=[];
+      for(var i in json){
+        arr.push(i+"="+json[i])
+      }
+      return arr.join("&")
+    }
+    var json={name:"张三",age:1000,job:"救爷爷"}
+    var url=jsonurl2(json)
+    document.write(url)
+</script>
+</html>
